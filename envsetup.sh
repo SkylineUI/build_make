@@ -849,6 +849,8 @@ function lunch()
     # Note this is the string "release", not the value of the variable.
     export TARGET_BUILD_TYPE=release
 
+    source_vendorsetup
+
     [[ -n "${ANDROID_QUIET_BUILD:-}" ]] || echo
 
     fixup_common_out_dir
